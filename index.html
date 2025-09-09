@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Style — Bootstrap Clone</title>
+    <meta name="description" content="A Bootstrap-made landing template with smooth animations and effects." />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body id="top">
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm bg-white bg-opacity-90">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#top"> <i class="bi bi-stars me-1"></i>Style </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+            <li class="nav-item"><a class="btn btn-primary ms-lg-2" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="progress-line"></div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="hero" class="hero d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold reveal-up">Make it simple. Make it stylish.</h1>
+            <p class="lead text-body-secondary mt-3 reveal-up delay-1">Clean Bootstrap template with smooth reveal animations, subtle parallax, and delightful micro‑interactions.</p>
+            <div class="d-flex gap-3 mt-4 reveal-up delay-2">
+              <a href="#portfolio" class="btn btn-primary btn-lg"> <i class="bi bi-play-fill me-1"></i> Explore Work </a>
+              <a href="#about" class="btn btn-outline-primary btn-lg"> <i class="bi bi-info-circle me-1"></i> Learn More </a>
+            </div>
+            <div class="brands d-flex align-items-center gap-4 mt-5 reveal-up delay-3">
+              <i class="bi bi-apple fs-2 opacity-50"></i>
+              <i class="bi bi-microsoft fs-2 opacity-50"></i>
+              <i class="bi bi-dribbble fs-2 opacity-50"></i>
+              <i class="bi bi-behance fs-2 opacity-50"></i>
+            </div>
+          </div>
+          <div class="col-lg-6 reveal">
+            <div class="hero-visual position-relative">
+              <img class="img-fluid rounded-4 shadow-lg float" src="https://picsum.photos/800/600?random=1" alt="Showcase" />
+              <div class="glow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bg"></div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6 reveal">
+            <img class="img-fluid rounded-4 shadow about-img" src="https://picsum.photos/700/500?random=2" alt="About" />
+          </div>
+          <div class="col-lg-6">
+            <span class="badge rounded-pill text-bg-primary-subtle text-primary reveal-up">Who we are</span>
+            <h2 class="mt-3 fw-bold reveal-up">Design-first Bootstrap builders.</h2>
+            <p class="lead text-body-secondary reveal-up delay-1">We craft fast, responsive templates with attention to micro‑interactions, motion, and accessibility.</p>
+            <div class="row g-3 mt-2">
+              <div class="col-6 reveal-up delay-2">
+                <div class="iconbox">
+                  <i class="bi bi-lightning-charge"></i>
+                </div>
+                <h6 class="mt-2">Performance</h6>
+                <p class="small text-body-secondary">Optimized assets & lazy‑loaded media.</p>
+              </div>
+              <div class="col-6 reveal-up delay-3">
+                <div class="iconbox">
+                  <i class="bi bi-magic"></i>
+                </div>
+                <h6 class="mt-2">Motion</h6>
+                <p class="small text-body-secondary">Subtle AOS-style reveal animations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section-padding bg-body-tertiary">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="badge rounded-pill text-bg-primary-subtle text-primary reveal-up">What we do</span>
+          <h2 class="mt-3 fw-bold reveal-up">Services</h2>
+          <p class="text-body-secondary reveal-up delay-1">From concept to launch with a polished finish.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm hover-up reveal">
+              <div class="card-body p-4">
+                <div class="iconbox-lg mb-3 bg-primary-subtle text-primary">
+                  <i class="bi bi-brush"></i>
+                </div>
+                <h5 class="card-title">UI/UX Design</h5>
+                <p class="card-text text-body-secondary">User-centered interfaces with micro‑interactions and motion.</p>
+                <a href="#" class="stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm hover-up reveal">
+              <div class="card-body p-4">
+                <div class="iconbox-lg mb-3 bg-primary-subtle text-primary">
+                  <i class="bi bi-phone"></i>
+                </div>
+                <h5 class="card-title">App Development</h5>
+                <p class="card-text text-body-secondary">Fast, responsive frontends with Bootstrap 5.</p>
+                <a href="#" class="stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm hover-up reveal">
+              <div class="card-body p-4">
+                <div class="iconbox-lg mb-3 bg-primary-subtle text-primary">
+                  <i class="bi bi-bar-chart"></i>
+                </div>
+                <h5 class="card-title">Analytics</h5>
+                <p class="card-text text-body-secondary">Measure what matters with clean dashboards.</p>
+                <a href="#" class="stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm hover-up reveal">
+              <div class="card-body p-4">
+                <div class="iconbox-lg mb-3 bg-primary-subtle text-primary">
+                  <i class="bi bi-bag-check"></i>
+                </div>
+                <h5 class="card-title">Branding</h5>
+                <p class="card-text text-body-secondary">Identity systems that scale across platforms.</p>
+                <a href="#" class="stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm hover-up reveal">
+              <div class="card-body p-4">
+                <div class="iconbox-lg mb-3 bg-primary-subtle text-primary">
+                  <i class="bi bi-rocket-takeoff"></i>
+                </div>
+                <h5 class="card-title">Launch & Growth</h5>
+                <p class="card-text text-body-secondary">SEO, performance, and launch playbooks.</p>
+                <a href="#" class="stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm hover-up reveal">
+              <div class="card-body p-4">
+                <div class="iconbox-lg mb-3 bg-primary-subtle text-primary">
+                  <i class="bi bi-cloud-arrow-up"></i>
+                </div>
+                <h5 class="card-title">CMS & Hosting</h5>
+                <p class="card-text text-body-secondary">Deployment pipelines and maintenance.</p>
+                <a href="#" class="stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section-padding">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4">
+          <div>
+            <h2 class="fw-bold mb-1 reveal-up">Portfolio</h2>
+            <p class="text-body-secondary reveal-up delay-1 mb-0">Filterable gallery with lightbox modal.</p>
+          </div>
+          <div class="filters reveal-up delay-2" data-filter-group>
+            <button class="btn btn-outline-secondary active" data-filter="*">All</button>
+            <button class="btn btn-outline-secondary" data-filter=".web">Web</button>
+            <button class="btn btn-outline-secondary" data-filter=".brand">Brand</button>
+            <button class="btn btn-outline-secondary" data-filter=".app">App</button>
+          </div>
+        </div>
+
+        <div class="row g-3 portfolio-grid">
+          <div class="col-sm-6 col-lg-4 grid-item web">
+            <figure class="portfolio-item card border-0 shadow-sm overflow-hidden rounded-4">
+              <img src="https://picsum.photos/800/600?random=1" class="img-fluid" alt="Work 1" />
+              <figcaption class="p-3 d-flex align-items-center justify-content-between">
+                <div>
+                  <h6 class="mb-1">Landing Page</h6>
+                  <small class="text-body-secondary">Web</small>
+                </div>
+                <button class="btn btn-sm btn-outline-secondary" data-lightbox="https://picsum.photos/1400/1000?random=1">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-6 col-lg-4 grid-item brand">
+            <figure class="portfolio-item card border-0 shadow-sm overflow-hidden rounded-4">
+              <img src="https://picsum.photos/800/600?random=2" class="img-fluid" alt="Work 2" />
+              <figcaption class="p-3 d-flex align-items-center justify-content-between">
+                <div>
+                  <h6 class="mb-1">Identity Kit</h6>
+                  <small class="text-body-secondary">Brand</small>
+                </div>
+                <button class="btn btn-sm btn-outline-secondary" data-lightbox="https://picsum.photos/1400/1000?random=2">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-6 col-lg-4 grid-item app">
+            <figure class="portfolio-item card border-0 shadow-sm overflow-hidden rounded-4">
+              <img src="https://picsum.photos/800/600?random=3" class="img-fluid" alt="Work 3" />
+              <figcaption class="p-3 d-flex align-items-center justify-content-between">
+                <div>
+                  <h6 class="mb-1">Mobile Concept</h6>
+                  <small class="text-body-secondary">App</small>
+                </div>
+                <button class="btn btn-sm btn-outline-secondary" data-lightbox="https://picsum.photos/1400/1000?random=3">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-6 col-lg-4 grid-item web">
+            <figure class="portfolio-item card border-0 shadow-sm overflow-hidden rounded-4">
+              <img src="https://picsum.photos/800/600?random=4" class="img-fluid" alt="Work 4" />
+              <figcaption class="p-3 d-flex align-items-center justify-content-between">
+                <div>
+                  <h6 class="mb-1">Dashboard</h6>
+                  <small class="text-body-secondary">Web</small>
+                </div>
+                <button class="btn btn-sm btn-outline-secondary" data-lightbox="https://picsum.photos/1400/1000?random=4">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-6 col-lg-4 grid-item brand">
+            <figure class="portfolio-item card border-0 shadow-sm overflow-hidden rounded-4">
+              <img src="https://picsum.photos/800/600?random=5" class="img-fluid" alt="Work 5" />
+              <figcaption class="p-3 d-flex align-items-center justify-content-between">
+                <div>
+                  <h6 class="mb-1">Marketing Site</h6>
+                  <small class="text-body-secondary">Brand</small>
+                </div>
+                <button class="btn btn-sm btn-outline-secondary" data-lightbox="https://picsum.photos/1400/1000?random=5">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-6 col-lg-4 grid-item app">
+            <figure class="portfolio-item card border-0 shadow-sm overflow-hidden rounded-4">
+              <img src="https://picsum.photos/800/600?random=6" class="img-fluid" alt="Work 6" />
+              <figcaption class="p-3 d-flex align-items-center justify-content-between">
+                <div>
+                  <h6 class="mb-1">Prototype</h6>
+                  <small class="text-body-secondary">App</small>
+                </div>
+                <button class="btn btn-sm btn-outline-secondary" data-lightbox="https://picsum.photos/1400/1000?random=6">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-6 col-lg-4 grid-item web">
+            <figure class="portfolio-item card border-0 shadow-sm overflow-hidden rounded-4">
+              <img src="https://picsum.photos/800/600?random=7" class="img-fluid" alt="Work 7" />
+              <figcaption class="p-3 d-flex align-items-center justify-content-between">
+                <div>
+                  <h6 class="mb-1">Portfolio</h6>
+                  <small class="text-body-secondary">Web</small>
+                </div>
+                <button class="btn btn-sm btn-outline-secondary" data-lightbox="https://picsum.photos/1400/1000?random=7">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-6 col-lg-4 grid-item brand">
+            <figure class="portfolio-item card border-0 shadow-sm overflow-hidden rounded-4">
+              <img src="https://picsum.photos/800/600?random=8" class="img-fluid" alt="Work 8" />
+              <figcaption class="p-3 d-flex align-items-center justify-content-between">
+                <div>
+                  <h6 class="mb-1">Campaign</h6>
+                  <small class="text-body-secondary">Brand</small>
+                </div>
+                <button class="btn btn-sm btn-outline-secondary" data-lightbox="https://picsum.photos/1400/1000?random=8">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-6 col-lg-4 grid-item app">
+            <figure class="portfolio-item card border-0 shadow-sm overflow-hidden rounded-4">
+              <img src="https://picsum.photos/800/600?random=9" class="img-fluid" alt="Work 9" />
+              <figcaption class="p-3 d-flex align-items-center justify-content-between">
+                <div>
+                  <h6 class="mb-1">Blog</h6>
+                  <small class="text-body-secondary">App</small>
+                </div>
+                <button class="btn btn-sm btn-outline-secondary" data-lightbox="https://picsum.photos/1400/1000?random=9">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section-padding bg-body-tertiary">
+      <div class="container">
+        <div class="text-center mb-4">
+          <span class="badge rounded-pill text-bg-primary-subtle text-primary reveal-up">What clients say</span>
+          <h2 class="mt-3 fw-bold reveal-up">Testimonials</h2>
+        </div>
+
+        <div id="testimonialCarousel" class="carousel slide reveal" data-bs-ride="carousel">
+          <div class="carousel-inner rounded-4 shadow">
+            <div class="carousel-item active">
+              <div class="p-5 bg-white text-dark">
+                <div class="d-flex align-items-center gap-3">
+                  <img src="https://i.pravatar.cc/80?img=1" class="rounded-circle" width="64" height="64" alt="Avatar" />
+                  <div>
+                    <strong>Ayu K.</strong><br />
+                    <small class="text-body-secondary">Product Manager</small>
+                  </div>
+                </div>
+                <p class="mt-3 mb-0 fs-5">“The animations are silky smooth and feel premium.”</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="p-5 bg-white text-dark">
+                <div class="d-flex align-items-center gap-3">
+                  <img src="https://i.pravatar.cc/80?img=2" class="rounded-circle" width="64" height="64" alt="Avatar" />
+                  <div>
+                    <strong>Budi S.</strong><br />
+                    <small class="text-body-secondary">Founder</small>
+                  </div>
+                </div>
+                <p class="mt-3 mb-0 fs-5">“Clean, fast, and easy to customize — exactly what we needed.”</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="p-5 bg-white text-dark">
+                <div class="d-flex align-items-center gap-3">
+                  <img src="https://i.pravatar.cc/80?img=3" class="rounded-circle" width="64" height="64" alt="Avatar" />
+                  <div>
+                    <strong>Clara M.</strong><br />
+                    <small class="text-body-secondary">UX Lead</small>
+                  </div>
+                </div>
+                <p class="mt-3 mb-0 fs-5">“Delightful micro‑interactions elevate the whole experience.”</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="badge rounded-pill text-bg-primary-subtle text-primary reveal-up">Simple plans</span>
+          <h2 class="mt-3 fw-bold reveal-up">Pricing</h2>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow price-card reveal">
+              <div class="card-header bg-transparent border-0 pt-4">
+                <h5 class="mb-0">Starter</h5>
+                <small class="text-body-secondary">For personal use</small>
+              </div>
+              <div class="card-body pt-0">
+                <div class="display-6 fw-bold mt-2">$0</div>
+                <ul class="list-unstyled mt-3 mb-4 small">
+                  <li><i class="bi bi-check2 me-1"></i>1 project</li>
+                  <li><i class="bi bi-check2 me-1"></i>Email support</li>
+                  <li><i class="bi bi-check2 me-1"></i>Community access</li>
+                </ul>
+                <a href="#contact" class="btn btn-outline-primary w-100">Get started</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow price-card featured reveal">
+              <div class="card-header bg-transparent border-0 pt-4">
+                <h5 class="mb-0">Pro</h5>
+                <small class="text-body-secondary">For small teams</small>
+              </div>
+              <div class="card-body pt-0">
+                <div class="display-6 fw-bold mt-2">$29</div>
+                <ul class="list-unstyled mt-3 mb-4 small">
+                  <li><i class="bi bi-check2 me-1"></i>Unlimited projects</li>
+                  <li><i class="bi bi-check2 me-1"></i>Priority support</li>
+                  <li><i class="bi bi-check2 me-1"></i>Advanced components</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary w-100">Get started</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow price-card reveal">
+              <div class="card-header bg-transparent border-0 pt-4">
+                <h5 class="mb-0">Enterprise</h5>
+                <small class="text-body-secondary">For large orgs</small>
+              </div>
+              <div class="card-body pt-0">
+                <div class="display-6 fw-bold mt-2">Custom</div>
+                <ul class="list-unstyled mt-3 mb-4 small">
+                  <li><i class="bi bi-check2 me-1"></i>SLA & SSO</li>
+                  <li><i class="bi bi-check2 me-1"></i>Design tokens</li>
+                  <li><i class="bi bi-check2 me-1"></i>Dedicated success</li>
+                </ul>
+                <a href="#contact" class="btn btn-outline-primary w-100">Get started</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section-padding bg-body-tertiary">
+      <div class="container">
+        <div class="text-center mb-4">
+          <span class="badge rounded-pill text-bg-primary-subtle text-primary reveal-up">Need help?</span>
+          <h2 class="mt-3 fw-bold reveal-up">Frequently Asked Questions</h2>
+        </div>
+        <div class="accordion reveal" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">How do the reveal animations work?</button>
+            </h2>
+            <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">We use a tiny IntersectionObserver script that toggles classes and CSS keyframes — no heavy AOS library required.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">Can I customize the theme colors?</button>
+            </h2>
+            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Yes. Edit CSS variables in <code>:root</code> for brand, accents, and surface tokens.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">Is this production ready?</button>
+            </h2>
+            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">The scaffold is accessible, responsive, and easy to extend. Run Lighthouse and tweak as needed.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <h2 class="fw-bold reveal-up">Get in touch</h2>
+            <p class="text-body-secondary reveal-up delay-1">We typically reply within one business day.</p>
+            <ul class="list-unstyled mt-3 reveal-up delay-2">
+              <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> Jl. Contoh Alamat No. 123, Jakarta</li>
+              <li class="mb-2"><i class="bi bi-telephone me-2"></i> +62 812-3456-7890</li>
+              <li class="mb-2"><i class="bi bi-envelope me-2"></i> hello@example.com</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 reveal">
+            <form class="card shadow border-0 p-4 rounded-4 needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Name</label>
+                  <input type="text" class="form-control" required />
+                  <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Email</label>
+                  <input type="email" class="form-control" required />
+                  <div class="invalid-feedback">Please enter a valid email.</div>
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Message</label>
+                  <textarea class="form-control" rows="5" required></textarea>
+                  <div class="invalid-feedback">Please write a message.</div>
+                </div>
+                <div class="col-12 d-grid">
+                  <button class="btn btn-primary btn-lg" type="submit">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-light">
+      <div class="container">
+        <div class="row gy-3 align-items-center">
+          <div class="col-md-6 small">© <span id="year"></span> Style. All rights reserved.</div>
+          <div class="col-md-6 text-md-end">
+            <a href="#" class="text-decoration-none text-light me-3">Privacy</a>
+            <a href="#" class="text-decoration-none text-light">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
