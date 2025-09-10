@@ -220,3 +220,19 @@ footer a:hover {
 .about-img {
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
+
+/* Hightlight */
+.hero {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.hero .highlight-blue {
+  color: #f8f9fb;
+  background-color: #0070c0; /* biru BPJS */
+}
+.hero .highlight-green {
+  color: #f8f9fb;
+  background-color: #58bc36; /* hijau BPJS */
+}
