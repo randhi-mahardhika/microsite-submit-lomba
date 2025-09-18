@@ -236,3 +236,89 @@ footer a:hover {
   color: #f8f9fb;
   background-color: #58bc36; /* hijau BPJS */
 }
+
+/* Floating */
+.hero .floating-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+}
+
+.hero .floating-card {
+  position: absolute;
+  background-color: var(--surface-color);
+  padding: 15px 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 90%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  animation: float 6s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+  .hero .floating-card {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+.hero .floating-card i {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .hero .floating-card i {
+    font-size: 1.2rem;
+  }
+}
+
+.hero .floating-card span {
+  font-weight: 600;
+  color: var(--default-color);
+}
+
+.hero .floating-card.card-1 {
+  top: 30%;
+  left: -5%;
+  animation-delay: 0s;
+  max-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .hero .floating-card.card-1 {
+    top: 30%;
+    left: -5%;
+    max-width: 200px;
+  }
+}
+
+.hero .floating-card.card-2 {
+  top: 57%;
+  right: -3%;
+  animation-delay: 2s;
+  max-width: 400px;
+}
+
+@media (max-width: 768px) {
+  .hero .floating-card.card-2 {
+    top: 60%;
+    right: -4%;
+    max-width: 250px;
+  }
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
