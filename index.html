@@ -530,44 +530,88 @@
     <section>
     <!-- Modal -->
     <div class="modal fade" id="kirimTulisanModal" tabindex="-1" aria-labelledby="kirimTulisanLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
           
-          <!-- Header -->
           <div class="modal-header">
             <h5 class="modal-title" id="kirimTulisanLabel">Kirim Tulisan</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
 
-          <!-- Body -->
           <div class="modal-body">
-            <form>
+            <form class="needs-validation" novalidate>
               <div class="mb-3">
-                <label for="nama" class="form-label">Nama</label>
+                <label for="nama" class="form-label">Nama Lengkap</label>
                 <input type="text" class="form-control" id="nama" required>
+                <div class="invalid-feedback">Nama wajib diisi.</div>
               </div>
+
+              <!-- Nomor Telepon -->
               <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
+                <label for="telepon" class="form-label">Nomor Telepon</label>
+                <input type="tel" class="form-control" id="telepon"
+                      pattern="[0-9 ]{10,20}" required
+                      placeholder="">
+                <div class="invalid-feedback">
+                  Masukkan nomor telepon valid (hanya angka, minimal 10 digit).
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Alamat Email</label>
                 <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">Email tidak valid.</div>
               </div>
-              <div class="mb-3">
-                <label for="file" class="form-label">Upload Tulisan</label>
+
+              <div class="mb-3" style="padding-bottom: 20px;">
+                <label class="form-label">Kategori Peserta</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="kategori" id="umum" value="umum" required>
+                  <label class="form-check-label" for="umum">Umum</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="kategori" id="mahasiswa" value="mahasiswa" required>
+                  <label class="form-check-label" for="mahasiswa">Mahasiswa</label>
+                </div>
+                <div class="invalid-feedback">Silakan pilih kategori peserta.</div>
+              </div>
+
+              <!-- Upload KTP selalu muncul -->
+              <div class="mb-3" id="uploadKTPWrapper" style="padding-bottom: 20px;">
+                <label for="uploadKTP" class="form-label">Upload Foto KTP</label>
+                <input type="file" class="form-control" id="uploadKTP" required>
+                <div class="invalid-feedback">Silakan upload foto KTP.</div>
+              </div>
+
+              <!-- Upload Kartu Pers / KTM selalu muncul -->
+              <div class="mb-3" id="uploadKTMWrapper" style="padding-bottom: 20px;">
+                <label for="uploadKTM" class="form-label">Upload Foto Kartu Pers / KTM</label>
+                <input type="file" class="form-control" id="uploadKTM">
+                <div class="invalid-feedback">Silakan upload foto Kartu Pers / KTM.</div>
+              </div>
+
+              <div class="mb-3" style="padding-bottom: 20px;">
+                <label for="file" class="form-label">Upload Karya Tulis Media Cetak</label>
                 <input type="file" class="form-control" id="file" required>
+                <div class="invalid-feedback">Silakan upload file tulisan.</div>
               </div>
-              <div class="mb-3">
-                <label for="link" class="form-label">Link URL</label>
-                <input type="url" class="form-control" id="link" 
-                      pattern="https?://.*" 
+
+              <div class="mb-3" style="padding-bottom: 20px;">
+                <label for="link" class="form-label">Link Karya Tulis Media Online</label>
+                <input type="url" class="form-control" id="link"
+                      pattern="https?://.*"
                       placeholder="https://example.com" required>
-                <div class="invalid-feedback">Masukkan URL valid (harus diawali http:// atau https://).</div>
+                <div class="invalid-feedback">Masukkan URL valid (http:// atau https://).</div>
               </div>
+
               <button type="submit" class="btn btn-success w-100">Submit</button>
             </form>
           </div>
 
         </div>
       </div>
-    </div>
+  
+
     </section>
 
 
