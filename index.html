@@ -560,7 +560,7 @@
                 <label for="telepon" class="form-label">Nomor Telepon Aktif</label>
                 <input type="tel" class="form-control" id="telepon"
                       pattern="[0-9 ]{10,20}" required
-                      placeholder="0812 3456 7890">
+                      placeholder="">
                 <div class="invalid-feedback">
                   Masukkan nomor telepon valid (hanya angka, minimal 10 digit).
                 </div>
@@ -605,14 +605,14 @@
 
               <!-- Upload Tulisan -->
               <div class="mb-3">
-                <label for="file" class="form-label">Upload Tulisan</label>
+                <label for="file" class="form-label">Upload Tulisan Media Cetak</label>
                 <input type="file" class="form-control" id="file" required>
                 <div class="invalid-feedback">Silakan upload file tulisan.</div>
               </div>
 
               <!-- Link URL -->
               <div class="mb-3">
-                <label for="link" class="form-label">Link URL</label>
+                <label for="link" class="form-label">Kirim Link Tulisan Media Online</label>
                 <input type="url" class="form-control" id="link"
                       pattern="https?://.*"
                       placeholder="https://example.com" required>
@@ -620,7 +620,7 @@
               </div>
 
               <!-- Submit -->
-              <button type="submit" class="btn btn-success w-100">Submit</button>
+              <button type="submit" class="btn btn-success w-100">Kirim</button>
             </form>
           </div>
 
