@@ -322,3 +322,11 @@ footer a:hover {
     transform: translateY(-20px);
   }
 }
+
+/* Input Link */
+.link-input .form-control {
+  flex: 1;
+}
+.link-input .remove-link {
+  padding: 0 10px;
+}

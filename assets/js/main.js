@@ -151,3 +151,37 @@ document.addEventListener("DOMContentLoaded", function () {
     previewImage(this, "previewKTM");
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const linkContainer = document.getElementById("linkContainer");
+  const addLinkBtn = document.getElementById("addLinkBtn");
+
+  // Fungsi menambahkan input link baru
+  function addLinkInput() {
+    const linkCount = linkContainer.querySelectorAll(".link-input").length;
+    if (linkCount >= 5) {
+      alert("Maksimal 5 link saja.");
+      return;
+    }
+
+    const div = document.createElement("div");
+    div.className = "input-group mb-2 link-input";
+    div.innerHTML = `
+      <input type="url" class="form-control" name="links[]" 
+             placeholder="https://example.com" required>
+      <button type="button" class="btn btn-outline-danger remove-link">&times;</button>
+    `;
+
+    linkContainer.appendChild(div);
+  }
+
+  // Tambah link baru saat klik tombol
+  addLinkBtn.addEventListener("click", addLinkInput);
+
+  // Delegasi event untuk hapus link
+  linkContainer.addEventListener("click", function (e) {
+    if (e.target.classList.contains("remove-link")) {
+      e.target.closest(".link-input").remove();
+    }
+  });
+});
