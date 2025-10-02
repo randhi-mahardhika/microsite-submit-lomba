@@ -330,3 +330,29 @@ footer a:hover {
 .link-input .remove-link {
   padding: 0 10px;
 }
+
+/* DropZone Karya Tulis */
+#dropZoneTulisan.dragover {
+  background-color: #e9f7ff;
+  border-color: #0d6efd;
+}
+.preview-item {
+  position: relative;
+  display: inline-block;
+}
+.preview-item img {
+  max-width: 120px;
+  border-radius: 8px;
+}
+.remove-file {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}

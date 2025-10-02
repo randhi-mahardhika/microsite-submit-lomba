@@ -608,10 +608,18 @@
 
               <!-- Upload Tulisan -->
               <div class="mb-3" style="padding-bottom: 20px;">
-                <label for="file" class="form-label">Upload Tulisan Media Cetak</label>
-                <input type="file" class="form-control" id="file" required>
-                <div class="invalid-feedback">Silakan upload file tulisan.</div>
+                <label for="uploadTulisan" class="form-label">Upload Tulisan (max 5 file)</label>
+                <div id="dropZoneTulisan" class="border border-2 rounded p-4 text-center bg-light">
+                  <p class="mb-2">Tarik & letakkan file tulisan Anda di sini, atau klik untuk memilih.</p>
+                  <input type="file" id="uploadTulisan" name="tulisan[]" multiple hidden>
+                  <button type="button" class="btn btn-outline-secondary" id="browseTulisanBtn">
+                    Pilih File
+                  </button>
+                </div>
+                <div id="previewTulisan" class="mt-3 d-flex flex-wrap gap-2"></div>
+                <div class="form-text">Maksimal 5 file (PDF, DOCX, atau format tulisan lain).</div>
               </div>
+
 
               <!-- Link URL -->
               <div class="mb-3" style="padding-bottom: 20px;">

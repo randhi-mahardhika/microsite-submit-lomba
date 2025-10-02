@@ -185,3 +185,76 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// Fungsi Drag & Drop Tulisan
+document.addEventListener("DOMContentLoaded", function () {
+  const dropZoneTulisan = document.getElementById("dropZoneTulisan");
+  const uploadTulisan = document.getElementById("uploadTulisan");
+  const browseTulisanBtn = document.getElementById("browseTulisanBtn");
+  const previewTulisan = document.getElementById("previewTulisan");
+
+  let uploadedFiles = [];
+
+  // Klik tombol → buka file picker
+  browseTulisanBtn.addEventListener("click", () => uploadTulisan.click());
+
+  // Saat pilih file manual
+  uploadTulisan.addEventListener("change", () => {
+    handleFiles(uploadTulisan.files);
+    uploadTulisan.value = ""; // reset input agar bisa pilih file yang sama lagi
+  });
+
+  // Drag & drop
+  dropZoneTulisan.addEventListener("dragover", (e) => {
+    e.preventDefault();
+    dropZoneTulisan.classList.add("dragover");
+  });
+  dropZoneTulisan.addEventListener("dragleave", () => {
+    dropZoneTulisan.classList.remove("dragover");
+  });
+  dropZoneTulisan.addEventListener("drop", (e) => {
+    e.preventDefault();
+    dropZoneTulisan.classList.remove("dragover");
+    handleFiles(e.dataTransfer.files);
+  });
+
+  // Fungsi handle file
+  function handleFiles(files) {
+    for (let file of files) {
+      if (uploadedFiles.length >= 5) {
+        alert("Maksimal 5 file tulisan saja!");
+        break;
+      }
+      uploadedFiles.push(file);
+      previewFile(file);
+    }
+  }
+
+  // Preview file (icon generic kalau bukan gambar)
+  function previewFile(file) {
+    const div = document.createElement("div");
+    div.className = "preview-item";
+
+    let filePreview;
+    if (file.type.startsWith("image/")) {
+      filePreview = document.createElement("img");
+      filePreview.src = URL.createObjectURL(file);
+    } else {
+      filePreview = document.createElement("div");
+      filePreview.textContent = file.name;
+      filePreview.className = "p-2 border rounded bg-white small";
+    }
+
+    const removeBtn = document.createElement("button");
+    removeBtn.innerHTML = "&times;";
+    removeBtn.className = "remove-file";
+    removeBtn.addEventListener("click", () => {
+      uploadedFiles = uploadedFiles.filter((f) => f !== file);
+      div.remove();
+    });
+
+    div.appendChild(filePreview);
+    div.appendChild(removeBtn);
+    previewTulisan.appendChild(div);
+  }
+});
